@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Undangan digital Majelis Ta'lim Al Khoir Wal Barokah — Sofifi, Maluku Utara.">
+  <title>Majelis Ta'lim Al Khoir Wal Barokah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="preloader" aria-hidden="true"><div class="loader-mark">ﷲ</div><span>Menyiapkan undangan…</span></div>
+
+  <main>
+    <section class="cover" id="cover">
+      <div class="cover-bg" role="img" aria-label="Masjid Nabawi"></div>
+      <div class="cover-overlay"></div>
+      <div class="gold-vignette"></div>
+      <div class="cover-content">
+        <img class="logo" src="assets/images/logo-alkhoir.png" alt="Logo Al Khoir Wal Barokah">
+        <p class="eyebrow">HADIRI & SYIARKANLAH</p>
+        <img class="title-art" src="assets/images/majlis-title.png" alt="Majelis Ta'lim Al Khoir Wal Barokah">
+        <p class="cover-subtitle">Sofifi Tengah · Sofifi · Maluku Utara</p>
+        <button class="open-btn" id="openInvitation" type="button"><span>✦</span> Buka Undangan <span>✦</span></button>
+        <p class="swipe-hint">Geser setelah undangan dibuka</p>
+      </div>
+    </section>
+
+    <div id="invitation" class="invitation" aria-hidden="true">
+      <section class="intro reveal">
+        <div class="ornament">۞</div>
+        <p class="eyebrow">HADIRI & SYIARKANLAH</p>
+        <img class="maulid-art" src="assets/images/maulid-title.png" alt="Maulid Akbar 1448 H">
+        <p class="lead">Dengan penuh rasa syukur dan cinta kepada Rasulullah ﷺ, kami mengundang Bapak/Ibu/Saudara(i) untuk hadir dan bersama-sama memeriahkan Maulid Akbar 1448 H yang insya Allah dilaksanakan secara terbuka untuk Ikhwan & Akhwat.</p>
+      </section>
+
+      <section class="portrait reveal">
+        <div class="section-line"></div>
+        <p class="eyebrow">PARA HABIB & ULAMA</p>
+        <div class="portrait-frame">
+          <img src="assets/images/habib-group.jpg" alt="Foto para Habib dan ulama">
+          <div class="frame-glow"></div>
+        </div>
+        <p class="caption">Semoga pertemuan ini menjadi jalan bertambahnya cinta kepada Nabi Muhammad ﷺ.</p>
+      </section>
+
+      <section class="event-card reveal">
+        <div class="ornament">۞</div>
+        <p class="eyebrow">INSYA ALLAH</p>
+        <h2>MAJLIS MAULID NABI</h2>
+        <div class="event-grid">
+          <div><small>HARI / TANGGAL</small><strong>Minggu, 06 September 2026</strong></div>
+          <div><small>WAKTU</small><strong>09.00 WIT — Selesai</strong></div>
+          <div><small>LOKASI</small><strong>Gedung Majlis Al Khoir Wal Barokah<br>Sofifi, Maluku Utara</strong></div>
+          <div><small>UNTUK UMUM</small><strong>Ikhwan & Akhwat</strong></div>
+        </div>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Gedung%20Majlis%20Al%20Khoir%20Wal%20Barokah%2C%20Sofifi%2C%20Maluku%20Utara" target="_blank" rel="noopener">⌖ Lihat Lokasi</a>
+      </section>
+
+      <section class="countdown reveal" aria-label="Hitung mundur acara">
+        <p class="eyebrow">MENUJU MAULID AKBAR 1448 H</p>
+        <div class="timer" id="timer">
+          <div><strong id="days">00</strong><span>Hari</span></div>
+          <div><strong id="hours">00</strong><span>Jam</span></div>
+          <div><strong id="minutes">00</strong><span>Menit</span></div>
+          <div><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+      </section>
+
+      <section class="quote reveal">
+        <div class="quote-mark">“</div>
+        <p>Barangsiapa yang bershalawat kepadaku satu kali, Allah akan bershalawat kepadanya sepuluh kali.</p>
+        <span>— HR. Muslim</span>
+      </section>
+
+      <section class="rsvp reveal" id="rsvp">
+        <p class="eyebrow">KONFIRMASI KEHADIRAN</p>
+        <h2>Insya Allah Hadir?</h2>
+        <p>Silakan isi konfirmasi agar kami dapat mempersiapkan acara dengan sebaik-baiknya.</p>
+        <form id="rsvpForm">
+          <label>Nama Lengkap<input id="guestName" required placeholder="Nama Anda" autocomplete="name"></label>
+          <label>Jumlah Kehadiran<input id="guestCount" required type="number" min="1" max="20" value="1"></label>
+          <label>Konfirmasi<select id="attendance"><option value="Hadir">Insya Allah Hadir</option><option value="Tidak hadir">Mohon Maaf, Tidak Hadir</option></select></label>
+          <button class="open-btn full" type="submit">Konfirmasi via WhatsApp</button>
+        </form>
+      </section>
+
+      <section class="closing reveal">
+        <img src="assets/images/logo-alkhoir.png" alt="Al Khoir Wal Barokah" class="closing-logo">
+        <h2>Jazakumullahu Khairan</h2>
+        <p>Atas perhatian dan kehadiran Bapak/Ibu/Saudara(i), kami ucapkan terima kasih.</p>
+        <div class="arabic">صَلَّى اللهُ عَلَى مُحَمَّد ﷺ</div>
+        <p class="closing-salam">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+      </section>
+    </div>
+  </main>
+
+  <button id="musicBtn" class="music-btn" type="button" aria-label="Kontrol musik" title="Musik">♫</button>
+  <audio id="audio" loop preload="none"></audio>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
